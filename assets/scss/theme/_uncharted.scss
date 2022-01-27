@@ -1,0 +1,96 @@
+#header-uncharted {
+    background-image: url('../img/uncharted-100.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 100vh;
+        text-align: center;
+        height: auto;
+        position: relative;
+        &::after{
+            content: ""; 
+            position: absolute; 
+            width: 55%;
+            height: 0vh;
+            top: 6.5%;
+            left: 10%;  
+            border: solid 1px $mainColor;
+            border-color: $mainColor transparent transparent transparent;
+        }
+        &::before{
+            content: ""; 
+            position: absolute; 
+            width: 0em;
+            height: 40%;
+            top: 20%;
+            left: 4.8%;  
+            border: solid 1px $mainColor;
+            border-color: transparent transparent transparent $mainColor;
+        }
+    .scroll-down {
+        position: absolute;
+        bottom: 10px;
+        color: $mainColor;
+        font-size: 2.5rem;
+        animation: bounce 0.5s ease-in infinite alternate;
+    }
+    @keyframes bounce{
+        from {transform: translateY(0);}
+        to   {transform: translateY(-10px);}
+    }   
+}
+#salle-description-uncharted {
+    background-image: url('../img/uncharted-banniere.png');
+    background-color: $secondColor;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $thirdColor;
+    font-family: $secondPolice;
+    padding: 4em;
+    .box-description {
+        display: flex;
+        justify-content: center;
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 80%;
+            li {
+                text-align: center;
+                font-size: 2rem;
+                width: 25%;
+                padding-bottom: 2em;
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    p {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    #salle-description-uncharted {
+        .box-description{
+        ul {
+            li {
+                width: 40%
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    #salle-description-uncharted {
+        .box-description{
+        ul {
+            li {
+                width: 80%
+                }
+            }
+        }
+    }
+}

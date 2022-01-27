@@ -1,0 +1,132 @@
+#header-contact {
+    background-color: $secondColor;
+}
+// Partie Formulaire de contact
+#contact {
+    background-color: $secondColor ;
+    padding: 2em;
+    .container-cont {
+        display: flex;
+        width: 80%;
+        background-color: white ;
+        margin: auto;
+        .contact {
+            margin: 2rem;
+            width: 50%;
+            .adresse {
+                h2 {
+                    font-family: $spElite;
+                    font-size: 30px;
+                    font-weight: normal;
+                    line-height: 4rem;
+                }
+                .fas {
+                    margin-right: 1rem;
+                    
+                }
+                a {
+                    font-family: $thirdPolice;
+                    font-weight: normal;
+                    color: $secondColor;
+                    text-decoration: none;
+                    opacity: 80%;
+                    line-height: 2rem;
+                }               
+            }
+            .formulaire {
+                padding-top: 4rem;
+                .form {
+                    .id {
+                        display: flex;
+                        justify-content: start;
+                        padding-bottom: 1em;
+                        margin: auto;
+                        .name {
+                            border: 2px solid $mainColor;
+                            border-radius: 5px;
+                            padding: 1em;
+                            width: 41%;
+                            margin-right: 1em;
+                            &::placeholder {
+                                font-family: $thirdPolice;
+                            }
+                        }
+                        .email {
+                            border: 2px solid $mainColor;
+                            border-radius: 5px;
+                            padding: 1em;
+                            width: 41%;
+                            &::placeholder {
+                                font-family: $thirdPolice;
+                            }
+                        }        
+                }
+                .message {
+                    border: 2px solid $mainColor;
+                    border-radius: 5px;
+                    padding: 8px 8px;
+                    resize: none;
+                    margin-left: auto;
+                    width: 90%;
+                    &::placeholder {
+                        font-family: $thirdPolice;
+                    }
+                }
+            }
+                .envoi {
+                font-family: $thirdPolice;
+                text-align: center;
+                text-decoration: none;
+                background-color: $mainColor;
+                color: $thirdColor;
+                font-weight: bold;
+                border-radius: 70px;
+                padding: 10px 30px ;
+                display: inline-block;
+                margin-top: 2em;
+                transition: all ease-in 0.3s;
+                &:hover {
+                    background: $secondColor;
+                    color: $mainColor;
+                }
+                }
+            }
+        }
+    }
+    .maps {
+        width: 50%;
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+// Media Queries 
+
+// Partie Tablette
+
+@media all and (max-width: 996px) {
+    #contact {
+        .container-cont {
+            flex-wrap: wrap;
+            .contact {
+                width: 80%;
+            }
+            .maps {
+                width: 100%;
+                height: 30vh;
+            }
+        }
+
+    }
+}
+
+// Partie Mobile
+
+
+
+
+// @media all and (max-width:425px) {
+    

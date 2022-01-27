@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#insta{
+    background: $thirdColor;
+    .titre-2-container{
+    text-align: center;
+        h2{
+            padding: 40px 0px 10px 0px;
+            font-size: $h2;
+            color: $mainColor;
+            font-family: $secondPolice;
+            margin:0px 35% 0px 9%;
+        }
+        .titre-insta{
+            color: $secondColor;
+            font-family: $spElite;
+            padding-left: 10em;
+            padding-top: 0.2em;
+        }
+    }
+    p{
+        font-family: $secondPolice;
+        text-align: center;
+        margin: 70px 60px;
+        font-size: 0.9rem;
+    }
+    .container-images{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    
+        .img-1-uncharted{
+            background-image: url(../img/Carre_insta_1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+            width: 300px;
+        }
+        .img-2-uncharted{
+            background-image: url(../img/Carre_insta_2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+            width: 300px;
+            min-width: 240px;
+        }
+        .img-3-uncharted{
+            background-image: url(../img/Carre_insta_3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+            width: 300px;
+        }
+    }
+}
+
+/********* MEDIA *************/
+
+@media(max-width: 1500px){
+    #insta{
+        .titre-2-container {
+            h2 {
+                padding: 5% 0 0 0;
+                margin: 0;
+            }
+            .titre-insta {
+                padding-left: 0;
+            }
+        }
+    }
+}
+@media(max-width: 900px){
+ .container-images{
+     flex-wrap: wrap;
+ }
+}
+@media (max-width: 390px){
+    .titre-2-container{
+        h3{
+            font-size: 1.5rem;
+        }
+        h4{
+            font-size: 1.5rem;
+        }
+    }
+    p{
+        margin: 30px;
+    }
+}

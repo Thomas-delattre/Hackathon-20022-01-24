@@ -1,0 +1,378 @@
+#header-home {
+    background-image: url('../img/fond.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    text-align: center;
+    height: auto;
+    position: relative;
+        &::after{
+            content: ""; 
+            position: absolute; 
+            width: 55%;
+            height: 0vh;
+            top: 6.5%;
+            left: 10%;  
+            border: solid 1px $mainColor;
+            border-color: $mainColor transparent transparent transparent;
+        }
+        &::before{
+            content: ""; 
+            position: absolute; 
+            width: 0em;
+            height: 40%;
+            top: 20%;
+            left: 4.8%;  
+            border: solid 1px $mainColor;
+            border-color: transparent transparent transparent $mainColor;
+        }
+}
+// a partir d'ici cela gère le css de tout les header, au dessus c'est pour le header de la home page
+header {
+    h1 {
+        padding-top: 2.2em;
+        padding-bottom: 0.2em;
+        color: $thirdColor;
+        word-spacing: 0.5em;
+        font-size: 8rem;
+        font-family: $spElite;
+        text-shadow: 10px 1px $mainColor;
+        span {
+            font-size: 4rem;
+            color: black;
+            text-shadow: none;
+        }
+    }
+    p {
+        padding-bottom: 5em;
+        font-size: 2rem;
+        font-family: $secondPolice;
+        color: $thirdColor;
+        text-shadow: black 0px 2px;
+    }
+    .icone-reseau {
+        position: absolute;
+        left: 3em;
+        bottom: 0;
+        z-index: 1;
+        li {
+            font-size: 3rem;
+            padding: 0.5em;
+            a{
+                color: $mainColor;
+                &:hover {
+                    color: $thirdColor;
+                }
+            }
+        }
+    }
+    .scroll-down {
+        color: $mainColor;
+        font-size: 2.5rem;
+        animation: bounce 0.5s ease-in infinite alternate;
+    }
+    @keyframes bounce{
+        from {transform: translateY(0);}
+        to   {transform: translateY(-10px);}
+   }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5%;
+        text-align: left;
+        .main-logo {
+            padding-top: 0.5em;
+            padding-left: 1.6em;
+            width: 7%;
+            img {
+                width: 100%;
+            }
+        }
+        a {
+            color: $thirdColor;
+        }
+        .deroulant {
+            z-index: 99;
+            padding-top: 3em;
+            display: flex;
+            justify-content: center;
+            color: $thirdColor;
+            height: auto;
+            cursor: pointer;  
+
+            li {
+                font-size: 2rem;
+                &:first-child {
+                    font-family: $secondPolice;
+                    color: $mainColor;
+                }
+                .sous-menu {
+                    transform: scale(0);
+                    transform-origin: top center;
+                    transition: all 300ms ease-in-out;  
+                    li {
+                        font-size: 1.5rem;
+                        background-color: black;
+                        padding: 10px 10px;
+                        transform: scale(0);
+                        transform-origin: top center;
+                        transition: all 300ms ease-in-out;
+                        text-align: center;   
+                        a {
+                            color: $thirdColor;
+    
+                            &:hover {
+                                color: $mainColor;
+                            }
+                        }
+                    }
+                } 
+            }
+
+            .contact-banner a{
+                background-color: rgba($color: #f09205, $alpha: 0.2);
+                padding: 20px;
+                border-radius: 40px;
+                font-size: 1.6rem;
+                font-family: $secondPolice;
+                &:hover span i{
+                    transition: all 0.6s ease-in-out;
+                    transform: rotate(180deg);
+                }
+            }
+
+             
+
+            li:hover .sous-menu li{
+                transform: scale(1);
+            }
+            li:hover .sous-menu{
+                transform: scale(1);
+            }
+        }
+        #burger {
+            display: none;       
+        }   
+    }
+    
+}    
+@media screen and (max-width: 1600px) {
+    #header-chucky, #header-home, #header-chateau, #header-uncharted, #header-souterrain {
+        &::after {
+            width: 45%;
+        }
+        &::before {
+            width: 35%;
+            top: 18%;
+        }
+    }
+}
+@media screen and (max-width: 1400px) {
+    #header-chucky, #header-home, #header-chateau, #header-uncharted, #header-souterrain {
+        &::after {
+            width: 40%;
+        }
+        &::before {
+            top: 18%;
+        }
+        nav {
+            .main-logo {
+                width: 7%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1250px) {
+    #header-chucky, #header-home, #header-chateau, #header-uncharted, #header-souterrain {
+        &::after {
+            width: 35%;
+        }
+        &::before {
+            top: 16%;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    #header-contact, #header-mention, #header-chucky, #header-home, #header-chateau, #header-uncharted, #header-souterrain {
+        h1 {
+            font-size: 6rem;
+            padding-top: 4em;
+        }
+        nav {
+            .main-logo {
+                padding-left: 1.2em;
+                padding-top: 1em;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1140px) {
+    #header-chucky, #header-home, #header-chateau, #header-uncharted, #header-souterrain {
+        &::after {
+            width: 35%;
+        }
+    }
+}
+@media screen and (max-width: 1040px) {
+    #header-mention, #header-chucky, #header-home, #header-chateau, #header-uncharted, #header-souterrain {
+        &::after {
+            width: 30%;
+        }
+    }
+}
+@media screen and (max-width: 996px) {
+    #header-contact, #header-mention, #header-chucky, #header-home, #header-chateau, #header-uncharted, #header-souterrain {
+        min-height: 80vh;
+        position: relative;
+        &::before {
+            border-color: transparent;
+        }
+        &::after {
+            border-color: transparent;
+        }
+        .icone-reseau {
+            left: 1.5em;
+            top: 50%;
+            transform: translateY(-50%);
+            li {
+                font-size: 2rem;
+            }
+        }
+        nav {
+            justify-content: space-between;
+            
+            .main-logo {
+                width: 10%;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            #burger {
+                margin-top: 2.5em;
+                width:30px;
+                height:2px;
+                background:$mainColor;
+                display:inline-block;
+                position:relative;
+            }
+            #burger::before,
+            #burger::after {
+                content:'';
+                width:30px;
+                height:2px;
+                background:$mainColor;
+                display:inline-block;
+                position:absolute;
+                transform-origin: center;
+                transition: all 0.3s ease;
+            }
+            #burger::before {
+                top:-7px;
+            }
+            #burger::after {
+                top:7px;
+            }
+            #burger.open {
+                background:transparent;
+            }
+            #burger.open::before {
+                transform: rotate(45deg); 
+                top:0;
+            }
+            #burger.open::after {
+                transform: rotate(-45deg);
+                top:0;
+            }
+            #deroulant {
+                display: flex;
+                flex-flow: column;
+                background:$secondColor;
+                position: absolute;
+                width:100%;
+                left: 0;
+                top: 4em;
+                padding:1.5em;
+                transform:scaleY(0);
+                transform-origin:center top;
+                transition:all 0.3s ease;
+
+                .sous-menu {
+                    transform: scale(1);
+                    z-index: 10;
+                    li {
+                        transform: scale(1);
+                        margin-left: 2em;
+                        background-color: transparent;
+                        border: none;
+                        text-align: left;
+                        a {
+                            color: $thirdColor;
+                        }
+                    }
+                }
+                .contact-banner a{
+                    background-color: inherit;
+                    color: $mainColor;
+                    font-family: $secondPolice;
+                }
+            }
+        }
+        #deroulant.open {
+            transform:scaleY(1);
+        }
+    }
+}
+@media screen and (max-width: 850px){
+    #header-contact, #header-mention, #header-chucky, #header-home, #header-chateau, #header-uncharted, #header-souterrain {
+        h1 {
+            font-size: 4rem;
+            padding-top: 6em;
+            text-shadow: 6px 1px $mainColor;
+            span {
+                font-size: 3rem;
+            }
+        }
+        nav {
+            .main-logo {
+                width: 15%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 590px){
+    #header-contact, #header-mention, #header-chucky, #header-home, #header-chateau, #header-uncharted, #header-souterrain {
+        h1 {
+            font-size: 3rem;
+            padding-top: 7em;
+            span {
+                font-size: 2.5rem;
+            }
+        }
+        nav {
+            .main-logo {
+                width: 20%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 430px){
+    #header-contact, #header-mention, #header-chucky, #header-home, #header-chateau, #header-uncharted, #header-souterrain {
+        h1 {
+            font-size: 3rem;
+            padding: 5em 2em 0;
+            margin: auto;
+            span {
+                font-size: 2.5rem;
+            }
+        }
+        nav {
+            .main-logo {
+                width: 25%;
+            }
+        }
+    }
+}

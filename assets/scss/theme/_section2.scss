@@ -1,0 +1,129 @@
+.section-2 {
+  background-color: $secondColor;
+  background-image: url("../img/test1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  .titre-container{
+    text-align: center;
+    h2 {
+     padding: 40px 0px 10px 0px;
+     font-size: $h2;
+     color: $mainColor;
+     font-family: $secondPolice;
+     margin:0px 35% 0px 9%;
+    }
+    #sous-titre {
+      color: $thirdColor;
+      font-family: $spElite;
+      font-size: $h2;
+    }
+  }
+  #text1 {
+    text-align: center;
+    padding: 60px 60px 20px 60px;
+  }
+  p {
+    text-align: center;
+    padding: 5% 20%;
+    color: $fourColor;
+    line-height: 25px;
+    font-family: $thirdPolice;
+  }
+
+  .img-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 40px;
+  }
+  #border-image{
+  padding-bottom: 30px;
+  border-radius: 30px 30px 50px 50px;
+  }
+  img{
+  padding: 10px;
+  border-radius: 40px;
+  }
+  /* Il apparait que sur la partie mobile */
+  h3{
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-family: $spElite;
+  color: $mainColor;
+  visibility: hidden;
+  text-align: center;
+  }
+}
+/************** MEDIA  ***************/
+@media (max-width: 1100px) {
+    .section-2 {
+      .img-container {
+        flex-wrap: wrap;
+    }
+  }
+}
+@media (max-width: 800px){
+  .section-2 {
+    h2{
+      margin:0px 30% 0px 20px;
+    }
+    p {
+      padding: 2%;
+    }
+  }
+}
+@media (max-width: 490px){
+  .section-2 {
+    .titre-container {
+      h2{
+        margin: 0;
+        font-size: 2.5rem;
+        padding-bottom: 0px;
+      }
+    }
+    .img-container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      h3{
+        visibility: visible;      
+      }
+      #border-image{
+      border: 2px solid $mainColor;
+      border-radius: 30px 30px 50px 50px;
+        padding: 0;
+      }
+  }
+}
+@media (max-width: 400px) {
+  .section-2 {
+    background-image: url();
+    background-color: $secondColor;
+    
+  }
+}
+  
+  
+}
+@media (max-width: 380px){
+  .section-2 {
+    p{
+      font-size: 0.9rem;
+    }
+  }
+}
+  //Si on trouve la solution pour le hover
+// .img-1:active:active{
+//   filter: brightness(60%);
+// }
+// .img-2:active:active{
+//   filter: brightness(60%);
+// }
+// .img-3:active:active{
+//   filter: brightness(60%);
+// }
+// .img-4:active:active{
+//   filter: brightness(60%);
+// }
+// }

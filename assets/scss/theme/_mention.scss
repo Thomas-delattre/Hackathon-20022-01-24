@@ -1,0 +1,40 @@
+#header-mention {
+    background-color: $secondColor;
+    min-height: 10vh!important;
+}
+#mention-legal {
+    background-color: $secondColor;
+    color: $thirdColor;
+    text-align: center;
+    line-height: 2.5em;
+    padding: 5%;
+    h2 {
+        font-size: 3rem;
+        font-family: $spElite;
+        margin-bottom: 2em;
+    }
+    h3 {
+        color: $mainColor;
+        font-size: 2rem;
+        font-family: $secondPolice;
+    }
+    p {
+        font-family: $thirdPolice;
+    }
+    a {
+        color: $thirdColor;
+        text-decoration: underline;
+        &:hover {
+            color: $mainColor;
+        }
+    }
+    h4 {
+        font-size: 1.8rem;
+        font-family: $secondPolice;
+    }
+}
+@media screen and (max-width: 996px) {
+    #header-mention, #header-contact {
+        min-height: 10vh!important;
+    }
+}

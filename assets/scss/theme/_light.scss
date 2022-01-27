@@ -1,0 +1,350 @@
+// Section Découvrir la lightroom
+#light {
+    background-image: url(../img/opacité3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+// Mise en place du h2   
+    h2 {
+        padding: 2rem;
+        font-family: $thirdPolice;
+        color: $mainColor;
+        font-size: 3rem;
+        font-weight: normal;
+        text-align: center;
+        padding-right: 8em;
+        margin-bottom: 2em;
+        .unchar {
+            font-family: $spElite;
+            color: $secondColor;
+            padding-left: 11em;
+        }
+    }
+//Partie  du contenu image et texte 
+    .light  {
+        display: flex;
+// Container avec les deux images
+        .container-img-light {
+            display: flex;
+            width: 45%;
+            padding: 4em;
+            position: relative;
+            .capsule1 {
+                position: absolute;
+                bottom: 10em;
+                left: 18em;
+                width: 35%;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .capsule2 {
+                position: absolute;
+                right: 10em;
+                bottom: 0;
+                width: 35%;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+// Partie texte et boutton
+        }
+        .text-light {
+            text-align: center;
+            width: 45%;
+            margin-bottom: 3em;
+            p{
+                text-align: center;
+                font-family: $thirdPolice;
+                line-height: 2em;
+                color: $fourColor;
+                font-size: 20px;
+                padding: 4em;
+            }
+            .secondary-btn {
+                font-family: $secondPolice;
+                text-decoration: none;
+                background-color: $mainColor;
+                color: $thirdColor;
+                font-weight: bold;
+                font-size: 22px;
+                border-radius: 70px;
+                padding: 20px 50px ;
+                display: inline-block;
+                margin-left: 2rem;
+                margin-top: 3rem;
+                transition: all 0.3s ease-in;
+                &:hover {
+                    background: $secondColor;
+                    color: $mainColor;
+                }
+                }
+        }
+        
+    }
+}
+@media screen and (max-width: 1650px) {
+    #light {
+        .light {
+            .container-img-light {       
+                .capsule1 {
+                    top: 0;
+                    left: 15em;           
+                }
+                .capsule2 {
+                    right: 10em;
+                    bottom: 6em;
+                  
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1500px) {
+    #light {
+        h2 {
+            padding-right: 0em;
+            .unchar {
+                padding-left: 0em;
+            }
+        }
+        .light {
+            .container-img-light {       
+                .capsule2 {
+                    right: 8em;
+                    bottom: 8em;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1440px) {
+    #light {
+        .light {
+            .container-img-light {       
+                .capsule2 {
+                    bottom: 14em;
+                    right: 8em;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1350px) {
+    #light {
+        .light {
+            .container-img-light {       
+                .capsule1 {
+                    top: 2em;
+                    left: 12em;           
+                }
+                .capsule2 {
+                    right: 10em;
+                    bottom: 16em;                
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1250px) {
+    #light {
+        .light {
+            .container-img-light {       
+                .capsule1 {
+                    top: 2em;
+                    left: 12em;           
+                }
+                .capsule2 {
+                    right: 9em;
+                    bottom: 22em;                
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    #light {
+        .light {
+            .container-img-light {       
+                .capsule1 {
+                    width: 40%;
+                    top: 2em;
+                    left: 12em;           
+                }
+                .capsule2 {
+                    width: 40%;
+                    right: 6em;
+                    bottom: 26em;                
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1150px) {
+    #light {
+        .light {
+            .container-img-light {       
+                .capsule1 {
+                    width: 40%;
+                    top: 2em;
+                    left: 10em;           
+                }
+                .capsule2 {
+                    width: 40%;
+                    right: 6em;
+                    bottom: 28em;                
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1100px) {
+    #light {
+        .light {
+            .container-img-light {       
+                .capsule1 {
+                    width: 40%;
+                    top: 2em;
+                    left: 10em;           
+                }
+                .capsule2 {
+                    width: 40%;
+                    right: 6em;
+                    bottom: 34em;                
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 996px) {
+    #light {
+        h2 {
+            padding: 2em 0;
+            padding-right: 0em;
+            .unchar {
+                padding-left: 0em;
+            }
+        }
+        .light {
+            .container-img-light {       
+                .capsule1 {
+                    width: 50%;
+                    top: 2em;
+                    left: 5em;           
+                }
+                .capsule2 {
+                    width: 50%;
+                    right: 4em;
+                    bottom: 40em;                
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 850px) {
+    #light {
+        .light {
+            flex-direction: column;
+            align-items: center;
+            .container-img-light {
+                width: 80%;
+                height: 20%;
+                padding: 8em 0;
+                .capsule1 {
+                    width: 35%;
+                    top: -6em;
+                    left: 10em;
+                }
+                .capsule2 {
+                    width: 35%;
+                    top: -1em;
+                    right: 10em;
+                }
+            }
+            .text-light {
+                width: 80%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    #light {
+        .light {
+            .container-img-light {       
+                .capsule1 {
+                    width: 40%;
+                    top: -8em;
+                    left: 7em;           
+                }
+                .capsule2 {
+                    width: 40%;
+                    right: 7em;  
+                    top: -4em;             
+                }
+            }
+            .text-light {
+                width: 100%;
+                p {
+                    padding: 2em;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    #light {
+        h2 {
+            font-size: 2.5rem;
+        }
+        .light {
+            .container-img-light {       
+                .capsule1 {
+                    width: 40%;
+                    left: 5em;   
+                    top: -6em;        
+                }
+                .capsule2 {
+                    width: 40%;
+                    right: 5em;   
+                    top: -1em;            
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    #light {
+        .light {
+            .container-img-light {       
+                .capsule1 {
+                    width: 60%;
+                    left: 2em;           
+                }
+                .capsule2 {
+                    width: 60%;
+                    right: 2em; 
+                    top: -2em;              
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    #light {
+        .light {
+            .container-img-light {       
+                .capsule1 {
+                    width: 60%;
+                    left: 1em;           
+                }
+                .capsule2 {
+                    width: 60%;
+                    right: 1em;               
+                }
+            }
+        }
+    }
+}

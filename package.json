@@ -1,0 +1,22 @@
+{
+  "name": "hackathon_1_campusdulac",
+  "version": "1.0.0",
+  "description": "Site réaliser durant le hackathon front-end du Campus du Lac en Janvier 2022",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w assets/scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordyLR/Hackathon_1_Campusdulac.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JordyLR/Hackathon_1_Campusdulac/issues"
+  },
+  "homepage": "https://github.com/JordyLR/Hackathon_1_Campusdulac#readme",
+  "dependencies": {
+    "sass": "^1.49.0"
+  }
+}

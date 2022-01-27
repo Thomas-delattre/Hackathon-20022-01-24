@@ -1,0 +1,251 @@
+#header-chateau {
+    background-image: url('../img/chateau-ambulant-100.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 100vh;
+        text-align: center;
+        height: auto;
+        position: relative;
+        &::after{
+            content: ""; 
+            position: absolute; 
+            width: 55%;
+            height: 0vh;
+            top: 6.5%;
+            left: 10%;  
+            border: solid 1px $mainColor;
+            border-color: $mainColor transparent transparent transparent;
+        }
+        &::before{
+            content: ""; 
+            position: absolute; 
+            width: 0em;
+            height: 40%;
+            top: 20%;
+            left: 4.8%;  
+            border: solid 1px $mainColor;
+            border-color: transparent transparent transparent $mainColor;
+        }
+    .scroll-down {
+        position: absolute;
+        bottom: 10px;
+        color: $mainColor;
+        font-size: 2.5rem;
+        animation: bounce 0.5s ease-in infinite alternate;
+    }
+    @keyframes bounce{
+        from {transform: translateY(0);}
+        to   {transform: translateY(-10px);}
+    }   
+}
+// gère la section présentation des 4 pages salles !
+#salle-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondColor;
+    color: $fourColor;
+    padding: 4em;
+    .box-presentation {
+        h3 {
+            color: $thirdColor;
+            font-size: 3rem;
+            font-family: $secondPolice;
+            padding-bottom: 1em;
+        }
+        width: 40%;
+        padding: 0 4em;
+        p {
+            font-family: $thirdPolice;
+            margin: auto;
+            padding: 1.5em 0;
+            font-size: 1.4rem;
+            line-height: 1.6em;
+            text-align: justify;
+            text-indent: 2em;
+        }
+        .img-presentation {
+            padding: 1.5em 0;
+            width: 60%;
+            height: auto;
+            margin: auto;
+            img {
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+#salle-description-chatambu {
+    background-image: url('../img/chateau-ambulant-banniere.png');
+    background-color: $secondColor;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $thirdColor;
+    font-family: $secondPolice;
+    padding: 4em;
+    .box-description {
+        display: flex;
+        justify-content: center;
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 80%;
+            li {
+                text-align: center;
+                font-size: 2rem;
+                width: 25%;
+                padding-bottom: 2em;
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    p {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+// gère la section réservation des 4 pages salles !
+#reservation {
+    background-color: $secondColor;
+    padding: 6em 0;
+    h2 {
+        font-size: $h2;
+        color: $thirdColor;
+        font-family: $secondPolice;
+        text-align: center;
+    }
+    .container-resa {
+        width: 70%;
+        margin: auto;
+        padding: 2em;
+        h4 {
+            text-align: center;
+            color: $mainColor;
+            font-family: $spElite;
+            font-size: 2.5rem;
+            margin-bottom: 1.5em;
+        }
+        .reservation-table {
+            color: $thirdColor;
+            display: flex;
+            justify-content: center;
+    
+            ul {
+                li {
+                    text-align: center;
+                    padding: 1.5em;
+                    font-family: $secondPolice;
+                    font-size: 2rem;
+                }
+            }
+            // .colonne-info {
+            //     a {
+            //         border: 1px solid $mainColor;
+            //         border-radius: 25px;
+            //         padding: 10px 40px;
+            //         color: $thirdColor;
+            //         transition: all 0.3s ease-in;
+            //         font-size: 1.5rem;
+            //         &:hover {
+            //             background-color: $mainColor;
+            //         }
+            //     }
+            //     li:first-child {
+            //         color: $secondColor;
+            //     }
+            
+            // }
+            .colonne-resa {
+                a {
+                    background-color: $mainColor;
+                    border: $mainColor 1px solid;
+                    border-radius: 25px;
+                    padding: 10px 20px;
+                    color: $thirdColor;
+                    transition: all 0.3s ease-in;
+                    font-size: 1.5rem;
+                    &:hover {
+                        color: $thirdColor;
+                        background-color: $secondColor;
+                        border: $mainColor 1px solid;
+                    }
+                }
+                li:first-child {
+                    color: $secondColor;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 850px) {
+    #salle-description-chatambu {
+        .box-description{
+        ul {
+            li {
+                width: 40%
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    #salle-presentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .box-presentation{
+            width: 100%;
+            padding: 1em;
+            &:last-child {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    #salle-description-chatambu {
+        .box-description{
+        ul {
+            li {
+                width: 80%
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 520px) {
+    #reservation {
+        h2 {
+            font-size: 2.5rem;
+        }
+        .container-resa {
+            h4 {
+                font-size: 2rem
+            }
+            padding: 0.2em;
+            .reservation-table {
+                ul {
+                    li {
+                        padding: 1em 0.5em;
+                        font-size: 1.5rem;
+                    }
+                    .colonne-resa {
+                        a {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
