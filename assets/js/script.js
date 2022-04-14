@@ -29,3 +29,54 @@ function topFunction() {
 
 mybutton.addEventListener('click', topFunction)
 // FIN BOUTON BACK TO TOP
+
+
+
+var numOne   = document.querySelector(".rire"),
+numTwo  = document.querySelector(".intrigue"),
+numThree = document.querySelector(".warrior"),
+numFour   =document.querySelector(".room"),
+
+chiffreParticipant = document.getElementById(".chiffre-participant");
+
+
+    
+    
+    function codetime() {
+      if (numOne.textContent >= 1200) {
+        clearInterval(2);
+      } else {
+        numOne.textContent++;
+      }
+    }
+    setInterval(codetime, 1);
+    
+    function coffeetime() {
+      if (numTwo.textContent >= 397) {
+        clearInterval(3);
+      } else {
+        numTwo.textContent++;
+      }
+    }
+    setInterval(coffeetime, 7);
+    
+    function worktime() {
+      if (numThree.textContent >= 197) {
+        clearInterval(3);
+      } else {
+        numThree.textContent++;
+      }
+    }
+    setInterval(worktime, 7);
+    
+    
+    function lightroom() {
+      if (numFour.textContent >= 10) {
+        clearInterval(4);
+      } else {
+        numFour.textContent++;
+      }
+    }
+    setInterval(lightroom, 10);
+    
+console.log(data_num)

@@ -1,0 +1,2124 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: none;
+  color: orange;
+  cursor: pointer;
+  font-size: 2rem;
+  mix-blend-mode: difference;
+}
+
+#backToTop:hover {
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+@font-face {
+  font-family: "Special Elite";
+  src: url(../fonts/Special_Elite/SpecialElite-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Fjalla One";
+  src: url(../fonts/Fjalla_One/FjallaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf);
+}
+
+#light {
+  background-image: url(../img/opacité3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#light h2 {
+  padding: 2rem;
+  font-family: "Roboto Mono";
+  color: #F09205;
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: center;
+  padding-right: 8em;
+  margin-bottom: 2em;
+}
+
+#light h2 .unchar {
+  font-family: "Special Elite";
+  color: #000000;
+  padding-left: 11em;
+}
+
+#light .light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#light .light .container-img-light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+  padding: 4em;
+  position: relative;
+}
+
+#light .light .container-img-light .capsule1 {
+  position: absolute;
+  bottom: 10em;
+  left: 18em;
+  width: 35%;
+}
+
+#light .light .container-img-light .capsule1 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#light .light .container-img-light .capsule2 {
+  position: absolute;
+  right: 10em;
+  bottom: 0;
+  width: 35%;
+}
+
+#light .light .container-img-light .capsule2 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#light .light .text-light {
+  text-align: center;
+  width: 45%;
+  margin-bottom: 3em;
+}
+
+#light .light .text-light p {
+  text-align: center;
+  font-family: "Roboto Mono";
+  line-height: 2em;
+  color: #886D14;
+  font-size: 20px;
+  padding: 4em;
+}
+
+#light .light .text-light .secondary-btn {
+  font-family: "Fjalla One";
+  text-decoration: none;
+  background-color: #F09205;
+  color: #E4E4E4;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 70px;
+  padding: 20px 50px;
+  display: inline-block;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+#light .light .text-light .secondary-btn:hover {
+  background: #000000;
+  color: #F09205;
+}
+
+@media screen and (max-width: 1650px) {
+  #light .light .container-img-light .capsule1 {
+    top: 0;
+    left: 15em;
+  }
+  #light .light .container-img-light .capsule2 {
+    right: 10em;
+    bottom: 6em;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  #light h2 {
+    padding-right: 0em;
+  }
+  #light h2 .unchar {
+    padding-left: 0em;
+  }
+  #light .light .container-img-light .capsule2 {
+    right: 8em;
+    bottom: 8em;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #light .light .container-img-light .capsule2 {
+    bottom: 14em;
+    right: 8em;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #light .light .container-img-light .capsule1 {
+    top: 2em;
+    left: 12em;
+  }
+  #light .light .container-img-light .capsule2 {
+    right: 10em;
+    bottom: 16em;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #light .light .container-img-light .capsule1 {
+    top: 2em;
+    left: 12em;
+  }
+  #light .light .container-img-light .capsule2 {
+    right: 9em;
+    bottom: 22em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #light .light .container-img-light .capsule1 {
+    width: 40%;
+    top: 2em;
+    left: 12em;
+  }
+  #light .light .container-img-light .capsule2 {
+    width: 40%;
+    right: 6em;
+    bottom: 26em;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #light .light .container-img-light .capsule1 {
+    width: 40%;
+    top: 2em;
+    left: 10em;
+  }
+  #light .light .container-img-light .capsule2 {
+    width: 40%;
+    right: 6em;
+    bottom: 28em;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #light .light .container-img-light .capsule1 {
+    width: 40%;
+    top: 2em;
+    left: 10em;
+  }
+  #light .light .container-img-light .capsule2 {
+    width: 40%;
+    right: 6em;
+    bottom: 34em;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  #light h2 {
+    padding: 2em 0;
+    padding-right: 0em;
+  }
+  #light h2 .unchar {
+    padding-left: 0em;
+  }
+  #light .light .container-img-light .capsule1 {
+    width: 50%;
+    top: 2em;
+    left: 5em;
+  }
+  #light .light .container-img-light .capsule2 {
+    width: 50%;
+    right: 4em;
+    bottom: 40em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #light .light {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #light .light .container-img-light {
+    width: 80%;
+    height: 20%;
+    padding: 8em 0;
+  }
+  #light .light .container-img-light .capsule1 {
+    width: 35%;
+    top: -6em;
+    left: 10em;
+  }
+  #light .light .container-img-light .capsule2 {
+    width: 35%;
+    top: -1em;
+    right: 10em;
+  }
+  #light .light .text-light {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #light .light .container-img-light .capsule1 {
+    width: 40%;
+    top: -8em;
+    left: 7em;
+  }
+  #light .light .container-img-light .capsule2 {
+    width: 40%;
+    right: 7em;
+    top: -4em;
+  }
+  #light .light .text-light {
+    width: 100%;
+  }
+  #light .light .text-light p {
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #light h2 {
+    font-size: 2.5rem;
+  }
+  #light .light .container-img-light .capsule1 {
+    width: 40%;
+    left: 5em;
+    top: -6em;
+  }
+  #light .light .container-img-light .capsule2 {
+    width: 40%;
+    right: 5em;
+    top: -1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #light .light .container-img-light .capsule1 {
+    width: 60%;
+    left: 2em;
+  }
+  #light .light .container-img-light .capsule2 {
+    width: 60%;
+    right: 2em;
+    top: -2em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #light .light .container-img-light .capsule1 {
+    width: 60%;
+    left: 1em;
+  }
+  #light .light .container-img-light .capsule2 {
+    width: 60%;
+    right: 1em;
+  }
+}
+
+#header-chateau {
+  background-image: url("../img/chateau-ambulant-100.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center;
+  height: auto;
+  position: relative;
+}
+
+#header-chateau::after {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 0vh;
+  top: 6.5%;
+  left: 10%;
+  border: solid 1px #F09205;
+  border-color: #F09205 transparent transparent transparent;
+}
+
+#header-chateau::before {
+  content: "";
+  position: absolute;
+  width: 0em;
+  height: 40%;
+  top: 20%;
+  left: 4.8%;
+  border: solid 1px #F09205;
+  border-color: transparent transparent transparent #F09205;
+}
+
+#header-chateau .scroll-down {
+  position: absolute;
+  bottom: 10px;
+  color: #F09205;
+  font-size: 2.5rem;
+  -webkit-animation: bounce 0.5s ease-in infinite alternate;
+          animation: bounce 0.5s ease-in infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+#salle-presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+  color: #886D14;
+  padding: 4em;
+}
+
+#salle-presentation .box-presentation {
+  width: 40%;
+  padding: 0 4em;
+}
+
+#salle-presentation .box-presentation h3 {
+  color: #E4E4E4;
+  font-size: 3rem;
+  font-family: "Fjalla One";
+  padding-bottom: 1em;
+}
+
+#salle-presentation .box-presentation p {
+  font-family: "Roboto Mono";
+  margin: auto;
+  padding: 1.5em 0;
+  font-size: 1.4rem;
+  line-height: 1.6em;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+#salle-presentation .box-presentation .img-presentation {
+  padding: 1.5em 0;
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+
+#salle-presentation .box-presentation .img-presentation img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#salle-description-chatambu {
+  background-image: url("../img/chateau-ambulant-banniere.png");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #E4E4E4;
+  font-family: "Fjalla One";
+  padding: 4em;
+}
+
+#salle-description-chatambu .box-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#salle-description-chatambu .box-description ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+}
+
+#salle-description-chatambu .box-description ul li {
+  text-align: center;
+  font-size: 2rem;
+  width: 25%;
+  padding-bottom: 2em;
+}
+
+#salle-description-chatambu .box-description ul li img {
+  width: 50%;
+}
+
+#salle-description-chatambu p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#reservation {
+  background-color: #000000;
+  padding: 6em 0;
+}
+
+#reservation h2 {
+  font-size: 3rem;
+  color: #E4E4E4;
+  font-family: "Fjalla One";
+  text-align: center;
+}
+
+#reservation .container-resa {
+  width: 70%;
+  margin: auto;
+  padding: 2em;
+}
+
+#reservation .container-resa h4 {
+  text-align: center;
+  color: #F09205;
+  font-family: "Special Elite";
+  font-size: 2.5rem;
+  margin-bottom: 1.5em;
+}
+
+#reservation .container-resa .reservation-table {
+  color: #E4E4E4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#reservation .container-resa .reservation-table ul li {
+  text-align: center;
+  padding: 1.5em;
+  font-family: "Fjalla One";
+  font-size: 2rem;
+}
+
+#reservation .container-resa .reservation-table .colonne-resa a {
+  background-color: #F09205;
+  border: #F09205 1px solid;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: #E4E4E4;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  font-size: 1.5rem;
+}
+
+#reservation .container-resa .reservation-table .colonne-resa a:hover {
+  color: #E4E4E4;
+  background-color: #000000;
+  border: #F09205 1px solid;
+}
+
+#reservation .container-resa .reservation-table .colonne-resa li:first-child {
+  color: #000000;
+}
+
+@media screen and (max-width: 850px) {
+  #salle-description-chatambu .box-description ul li {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #salle-presentation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #salle-presentation .box-presentation {
+    width: 100%;
+    padding: 1em;
+  }
+  #salle-presentation .box-presentation:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #salle-description-chatambu .box-description ul li {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #reservation h2 {
+    font-size: 2.5rem;
+  }
+  #reservation .container-resa {
+    padding: 0.2em;
+  }
+  #reservation .container-resa h4 {
+    font-size: 2rem;
+  }
+  #reservation .container-resa .reservation-table ul li {
+    padding: 1em 0.5em;
+    font-size: 1.5rem;
+  }
+  #reservation .container-resa .reservation-table ul .colonne-resa a {
+    font-size: 1.2rem;
+  }
+}
+
+#header-uncharted {
+  background-image: url("../img/uncharted-100.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center;
+  height: auto;
+  position: relative;
+}
+
+#header-uncharted::after {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 0vh;
+  top: 6.5%;
+  left: 10%;
+  border: solid 1px #F09205;
+  border-color: #F09205 transparent transparent transparent;
+}
+
+#header-uncharted::before {
+  content: "";
+  position: absolute;
+  width: 0em;
+  height: 40%;
+  top: 20%;
+  left: 4.8%;
+  border: solid 1px #F09205;
+  border-color: transparent transparent transparent #F09205;
+}
+
+#header-uncharted .scroll-down {
+  position: absolute;
+  bottom: 10px;
+  color: #F09205;
+  font-size: 2.5rem;
+  -webkit-animation: bounce 0.5s ease-in infinite alternate;
+          animation: bounce 0.5s ease-in infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+#salle-description-uncharted {
+  background-image: url("../img/uncharted-banniere.png");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #E4E4E4;
+  font-family: "Fjalla One";
+  padding: 4em;
+}
+
+#salle-description-uncharted .box-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#salle-description-uncharted .box-description ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+}
+
+#salle-description-uncharted .box-description ul li {
+  text-align: center;
+  font-size: 2rem;
+  width: 25%;
+  padding-bottom: 2em;
+}
+
+#salle-description-uncharted .box-description ul li img {
+  width: 50%;
+}
+
+#salle-description-uncharted p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 850px) {
+  #salle-description-uncharted .box-description ul li {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #salle-description-uncharted .box-description ul li {
+    width: 80%;
+  }
+}
+
+#header-mention {
+  background-color: #000000;
+  min-height: 10vh !important;
+}
+
+#mention-legal {
+  background-color: #000000;
+  color: #E4E4E4;
+  text-align: center;
+  line-height: 2.5em;
+  padding: 5%;
+}
+
+#mention-legal h2 {
+  font-size: 3rem;
+  font-family: "Special Elite";
+  margin-bottom: 2em;
+}
+
+#mention-legal h3 {
+  color: #F09205;
+  font-size: 2rem;
+  font-family: "Fjalla One";
+}
+
+#mention-legal p {
+  font-family: "Roboto Mono";
+}
+
+#mention-legal a {
+  color: #E4E4E4;
+  text-decoration: underline;
+}
+
+#mention-legal a:hover {
+  color: #F09205;
+}
+
+#mention-legal h4 {
+  font-size: 1.8rem;
+  font-family: "Fjalla One";
+}
+
+@media screen and (max-width: 996px) {
+  #header-mention, #header-contact {
+    min-height: 10vh !important;
+  }
+}
+
+#header-souterrain {
+  background-image: url("../img/souterrains-bordeaux-vp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000000;
+  min-height: 100vh;
+  text-align: center;
+  height: auto;
+  position: relative;
+}
+
+#header-souterrain::after {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 0vh;
+  top: 6.5%;
+  left: 10%;
+  border: solid 1px #F09205;
+  border-color: #F09205 transparent transparent transparent;
+}
+
+#header-souterrain::before {
+  content: "";
+  position: absolute;
+  width: 0em;
+  height: 40%;
+  top: 20%;
+  left: 4.8%;
+  border: solid 1px #F09205;
+  border-color: transparent transparent transparent #F09205;
+}
+
+#header-souterrain .scroll-down {
+  position: absolute;
+  bottom: 10px;
+  color: #F09205;
+  font-size: 2.5rem;
+  -webkit-animation: bounce 0.5s ease-in infinite alternate;
+          animation: bounce 0.5s ease-in infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+#salle-description-souterrains {
+  background-image: url("../img/souterrain-banniere.png");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #E4E4E4;
+  font-family: "Fjalla One";
+  padding: 4em;
+}
+
+#salle-description-souterrains .box-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#salle-description-souterrains .box-description ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+}
+
+#salle-description-souterrains .box-description ul li {
+  text-align: center;
+  font-size: 2rem;
+  width: 25%;
+  padding-bottom: 2em;
+}
+
+#salle-description-souterrains .box-description ul li img {
+  width: 50%;
+}
+
+#salle-description-souterrains p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 850px) {
+  #salle-description-souterrains .box-description ul li {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #salle-description-souterrains .box-description ul li {
+    width: 80%;
+  }
+}
+
+#header-chucky {
+  background-image: url("../img/chuky-100.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000000;
+  min-height: 100vh;
+  text-align: center;
+  height: auto;
+  position: relative;
+}
+
+#header-chucky::after {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 0vh;
+  top: 6.5%;
+  left: 10%;
+  border: solid 1px #F09205;
+  border-color: #F09205 transparent transparent transparent;
+}
+
+#header-chucky::before {
+  content: "";
+  position: absolute;
+  width: 0em;
+  height: 40%;
+  top: 20%;
+  left: 4.8%;
+  border: solid 1px #F09205;
+  border-color: transparent transparent transparent #F09205;
+}
+
+#header-chucky .scroll-down {
+  position: absolute;
+  bottom: 10px;
+  color: #F09205;
+  font-size: 2.5rem;
+  -webkit-animation: bounce 0.5s ease-in infinite alternate;
+          animation: bounce 0.5s ease-in infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+#salle-description-chucky {
+  background-image: url("../img/chucky-banniere.png");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #E4E4E4;
+  font-family: "Fjalla One";
+  padding: 4em;
+}
+
+#salle-description-chucky .box-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#salle-description-chucky .box-description ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+}
+
+#salle-description-chucky .box-description ul li {
+  text-align: center;
+  font-size: 2rem;
+  width: 25%;
+  padding-bottom: 2em;
+}
+
+#salle-description-chucky .box-description ul li img {
+  width: 50%;
+}
+
+@media screen and (max-width: 850px) {
+  #salle-description-chucky .box-description ul li {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #salle-description-chucky .box-description ul li {
+    width: 80%;
+  }
+}
+
+#header-contact {
+  background-color: #000000;
+}
+
+#contact {
+  background-color: #000000;
+  padding: 2em;
+}
+
+#contact .container-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+}
+
+#contact .container-cont .contact {
+  margin: 2rem;
+  width: 50%;
+}
+
+#contact .container-cont .contact .adresse h2 {
+  font-family: "Special Elite";
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 4rem;
+}
+
+#contact .container-cont .contact .adresse .fas {
+  margin-right: 1rem;
+}
+
+#contact .container-cont .contact .adresse a {
+  font-family: "Roboto Mono";
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+  opacity: 80%;
+  line-height: 2rem;
+}
+
+#contact .container-cont .contact .formulaire {
+  padding-top: 4rem;
+}
+
+#contact .container-cont .contact .formulaire .form .id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-bottom: 1em;
+  margin: auto;
+}
+
+#contact .container-cont .contact .formulaire .form .id .name {
+  border: 2px solid #F09205;
+  border-radius: 5px;
+  padding: 1em;
+  width: 41%;
+  margin-right: 1em;
+}
+
+#contact .container-cont .contact .formulaire .form .id .name::-webkit-input-placeholder {
+  font-family: "Roboto Mono";
+}
+
+#contact .container-cont .contact .formulaire .form .id .name:-ms-input-placeholder {
+  font-family: "Roboto Mono";
+}
+
+#contact .container-cont .contact .formulaire .form .id .name::-ms-input-placeholder {
+  font-family: "Roboto Mono";
+}
+
+#contact .container-cont .contact .formulaire .form .id .name::placeholder {
+  font-family: "Roboto Mono";
+}
+
+#contact .container-cont .contact .formulaire .form .id .email {
+  border: 2px solid #F09205;
+  border-radius: 5px;
+  padding: 1em;
+  width: 41%;
+}
+
+#contact .container-cont .contact .formulaire .form .id .email::-webkit-input-placeholder {
+  font-family: "Roboto Mono";
+}
+
+#contact .container-cont .contact .formulaire .form .id .email:-ms-input-placeholder {
+  font-family: "Roboto Mono";
+}
+
+#contact .container-cont .contact .formulaire .form .id .email::-ms-input-placeholder {
+  font-family: "Roboto Mono";
+}
+
+#contact .container-cont .contact .formulaire .form .id .email::placeholder {
+  font-family: "Roboto Mono";
+}
+
+#contact .container-cont .contact .formulaire .form .message {
+  border: 2px solid #F09205;
+  border-radius: 5px;
+  padding: 8px 8px;
+  resize: none;
+  margin-left: auto;
+  width: 90%;
+}
+
+#contact .container-cont .contact .formulaire .form .message::-webkit-input-placeholder {
+  font-family: "Roboto Mono";
+}
+
+#contact .container-cont .contact .formulaire .form .message:-ms-input-placeholder {
+  font-family: "Roboto Mono";
+}
+
+#contact .container-cont .contact .formulaire .form .message::-ms-input-placeholder {
+  font-family: "Roboto Mono";
+}
+
+#contact .container-cont .contact .formulaire .form .message::placeholder {
+  font-family: "Roboto Mono";
+}
+
+#contact .container-cont .contact .formulaire .envoi {
+  font-family: "Roboto Mono";
+  text-align: center;
+  text-decoration: none;
+  background-color: #F09205;
+  color: #E4E4E4;
+  font-weight: bold;
+  border-radius: 70px;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 2em;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+#contact .container-cont .contact .formulaire .envoi:hover {
+  background: #000000;
+  color: #F09205;
+}
+
+#contact .maps {
+  width: 50%;
+}
+
+#contact .maps iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media all and (max-width: 996px) {
+  #contact .container-cont {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #contact .container-cont .contact {
+    width: 80%;
+  }
+  #contact .container-cont .maps {
+    width: 100%;
+    height: 30vh;
+  }
+}
+
+#chiffre-participant {
+  background-color: #000000;
+  color: #E4E4E4;
+  font-family: "Fjalla One";
+  font-size: 1.2rem;
+}
+
+#chiffre-participant ul {
+  padding: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#chiffre-participant ul li {
+  padding: 0 0.5em;
+}
+
+#chiffre-participant ul span {
+  color: #F09205;
+  font-size: 4rem;
+}
+
+.section-2 {
+  background-color: #000000;
+  background-image: url("../img/test1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Il apparait que sur la partie mobile */
+}
+
+.section-2 .titre-container {
+  text-align: center;
+}
+
+.section-2 .titre-container h2 {
+  padding: 40px 0px 10px 0px;
+  font-size: 3rem;
+  color: #F09205;
+  font-family: "Fjalla One";
+  margin: 0px 35% 0px 9%;
+}
+
+.section-2 .titre-container #sous-titre {
+  color: #E4E4E4;
+  font-family: "Special Elite";
+  font-size: 3rem;
+}
+
+.section-2 #text1 {
+  text-align: center;
+  padding: 60px 60px 20px 60px;
+}
+
+.section-2 p {
+  text-align: center;
+  padding: 5% 20%;
+  color: #886D14;
+  line-height: 25px;
+  font-family: "Roboto Mono";
+}
+
+.section-2 .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 40px;
+}
+
+.section-2 #border-image {
+  padding-bottom: 30px;
+  border-radius: 30px 30px 50px 50px;
+}
+
+.section-2 img {
+  padding: 10px;
+  border-radius: 40px;
+}
+
+.section-2 h3 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-family: "Special Elite";
+  color: #F09205;
+  visibility: hidden;
+  text-align: center;
+}
+
+/************** MEDIA  ***************/
+@media (max-width: 1100px) {
+  .section-2 .img-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 800px) {
+  .section-2 h2 {
+    margin: 0px 30% 0px 20px;
+  }
+  .section-2 p {
+    padding: 2%;
+  }
+}
+
+@media (max-width: 490px) {
+  .section-2 .titre-container h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    padding-bottom: 0px;
+  }
+  .section-2 .img-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-2 .img-container h3 {
+    visibility: visible;
+  }
+  .section-2 .img-container #border-image {
+    border: 2px solid #F09205;
+    border-radius: 30px 30px 50px 50px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 490px) and (max-width: 400px) {
+  .section-2 {
+    background-image: url();
+    background-color: #000000;
+  }
+}
+
+@media (max-width: 380px) {
+  .section-2 p {
+    font-size: 0.9rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#insta {
+  background: #E4E4E4;
+}
+
+#insta .titre-2-container {
+  text-align: center;
+}
+
+#insta .titre-2-container h2 {
+  padding: 40px 0px 10px 0px;
+  font-size: 3rem;
+  color: #F09205;
+  font-family: "Fjalla One";
+  margin: 0px 35% 0px 9%;
+}
+
+#insta .titre-2-container .titre-insta {
+  color: #000000;
+  font-family: "Special Elite";
+  padding-left: 10em;
+  padding-top: 0.2em;
+}
+
+#insta p {
+  font-family: "Fjalla One";
+  text-align: center;
+  margin: 70px 60px;
+  font-size: 0.9rem;
+}
+
+#insta .container-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+#insta .container-images .img-1-uncharted {
+  background-image: url(../img/Carre_insta_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+}
+
+#insta .container-images .img-2-uncharted {
+  background-image: url(../img/Carre_insta_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+  min-width: 240px;
+}
+
+#insta .container-images .img-3-uncharted {
+  background-image: url(../img/Carre_insta_3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+}
+
+/********* MEDIA *************/
+@media (max-width: 1500px) {
+  #insta .titre-2-container h2 {
+    padding: 5% 0 0 0;
+    margin: 0;
+  }
+  #insta .titre-2-container .titre-insta {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .container-images {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 390px) {
+  .titre-2-container h3 {
+    font-size: 1.5rem;
+  }
+  .titre-2-container h4 {
+    font-size: 1.5rem;
+  }
+  p {
+    margin: 30px;
+  }
+}
+
+#header-home {
+  background-image: url("../img/fond.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center;
+  height: auto;
+  position: relative;
+}
+
+#header-home::after {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 0vh;
+  top: 6.5%;
+  left: 10%;
+  border: solid 1px #F09205;
+  border-color: #F09205 transparent transparent transparent;
+}
+
+#header-home::before {
+  content: "";
+  position: absolute;
+  width: 0em;
+  height: 40%;
+  top: 20%;
+  left: 4.8%;
+  border: solid 1px #F09205;
+  border-color: transparent transparent transparent #F09205;
+}
+
+header h1 {
+  padding-top: 2.2em;
+  padding-bottom: 0.2em;
+  color: #E4E4E4;
+  word-spacing: 0.5em;
+  font-size: 8rem;
+  font-family: "Special Elite";
+  text-shadow: 10px 1px #F09205;
+}
+
+header h1 span {
+  font-size: 4rem;
+  color: black;
+  text-shadow: none;
+}
+
+header p {
+  padding-bottom: 5em;
+  font-size: 2rem;
+  font-family: "Fjalla One";
+  color: #E4E4E4;
+  text-shadow: black 0px 2px;
+}
+
+header .icone-reseau {
+  position: absolute;
+  left: 3em;
+  bottom: 0;
+  z-index: 1;
+}
+
+header .icone-reseau li {
+  font-size: 3rem;
+  padding: 0.5em;
+}
+
+header .icone-reseau li a {
+  color: #F09205;
+}
+
+header .icone-reseau li a:hover {
+  color: #E4E4E4;
+}
+
+header .scroll-down {
+  color: #F09205;
+  font-size: 2.5rem;
+  -webkit-animation: bounce 0.5s ease-in infinite alternate;
+          animation: bounce 0.5s ease-in infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 5%;
+  text-align: left;
+}
+
+header nav .main-logo {
+  padding-top: 0.5em;
+  padding-left: 1.6em;
+  width: 7%;
+}
+
+header nav .main-logo img {
+  width: 100%;
+}
+
+header nav a {
+  color: #E4E4E4;
+}
+
+header nav .deroulant {
+  z-index: 99;
+  padding-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #E4E4E4;
+  height: auto;
+  cursor: pointer;
+}
+
+header nav .deroulant li {
+  font-size: 2rem;
+}
+
+header nav .deroulant li:first-child {
+  font-family: "Fjalla One";
+  color: #F09205;
+}
+
+header nav .deroulant li .sous-menu {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+header nav .deroulant li .sous-menu li {
+  font-size: 1.5rem;
+  background-color: black;
+  padding: 10px 10px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  text-align: center;
+}
+
+header nav .deroulant li .sous-menu li a {
+  color: #E4E4E4;
+}
+
+header nav .deroulant li .sous-menu li a:hover {
+  color: #F09205;
+}
+
+header nav .deroulant .contact-banner a {
+  background-color: rgba(240, 146, 5, 0.2);
+  padding: 20px;
+  border-radius: 40px;
+  font-size: 1.6rem;
+  font-family: "Fjalla One";
+}
+
+header nav .deroulant .contact-banner a:hover span i {
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+header nav .deroulant li:hover .sous-menu li {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+header nav .deroulant li:hover .sous-menu {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+header nav #burger {
+  display: none;
+}
+
+@media screen and (max-width: 1600px) {
+  #header-chucky::after, #header-home::after, #header-chateau::after, #header-uncharted::after, #header-souterrain::after {
+    width: 45%;
+  }
+  #header-chucky::before, #header-home::before, #header-chateau::before, #header-uncharted::before, #header-souterrain::before {
+    width: 35%;
+    top: 18%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #header-chucky::after, #header-home::after, #header-chateau::after, #header-uncharted::after, #header-souterrain::after {
+    width: 40%;
+  }
+  #header-chucky::before, #header-home::before, #header-chateau::before, #header-uncharted::before, #header-souterrain::before {
+    top: 18%;
+  }
+  #header-chucky nav .main-logo, #header-home nav .main-logo, #header-chateau nav .main-logo, #header-uncharted nav .main-logo, #header-souterrain nav .main-logo {
+    width: 7%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #header-chucky::after, #header-home::after, #header-chateau::after, #header-uncharted::after, #header-souterrain::after {
+    width: 35%;
+  }
+  #header-chucky::before, #header-home::before, #header-chateau::before, #header-uncharted::before, #header-souterrain::before {
+    top: 16%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #header-contact h1, #header-mention h1, #header-chucky h1, #header-home h1, #header-chateau h1, #header-uncharted h1, #header-souterrain h1 {
+    font-size: 6rem;
+    padding-top: 4em;
+  }
+  #header-contact nav .main-logo, #header-mention nav .main-logo, #header-chucky nav .main-logo, #header-home nav .main-logo, #header-chateau nav .main-logo, #header-uncharted nav .main-logo, #header-souterrain nav .main-logo {
+    padding-left: 1.2em;
+    padding-top: 1em;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  #header-chucky::after, #header-home::after, #header-chateau::after, #header-uncharted::after, #header-souterrain::after {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  #header-mention::after, #header-chucky::after, #header-home::after, #header-chateau::after, #header-uncharted::after, #header-souterrain::after {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  #header-contact, #header-mention, #header-chucky, #header-home, #header-chateau, #header-uncharted, #header-souterrain {
+    min-height: 80vh;
+    position: relative;
+  }
+  #header-contact::before, #header-mention::before, #header-chucky::before, #header-home::before, #header-chateau::before, #header-uncharted::before, #header-souterrain::before {
+    border-color: transparent;
+  }
+  #header-contact::after, #header-mention::after, #header-chucky::after, #header-home::after, #header-chateau::after, #header-uncharted::after, #header-souterrain::after {
+    border-color: transparent;
+  }
+  #header-contact .icone-reseau, #header-mention .icone-reseau, #header-chucky .icone-reseau, #header-home .icone-reseau, #header-chateau .icone-reseau, #header-uncharted .icone-reseau, #header-souterrain .icone-reseau {
+    left: 1.5em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  #header-contact .icone-reseau li, #header-mention .icone-reseau li, #header-chucky .icone-reseau li, #header-home .icone-reseau li, #header-chateau .icone-reseau li, #header-uncharted .icone-reseau li, #header-souterrain .icone-reseau li {
+    font-size: 2rem;
+  }
+  #header-contact nav, #header-mention nav, #header-chucky nav, #header-home nav, #header-chateau nav, #header-uncharted nav, #header-souterrain nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #header-contact nav .main-logo, #header-mention nav .main-logo, #header-chucky nav .main-logo, #header-home nav .main-logo, #header-chateau nav .main-logo, #header-uncharted nav .main-logo, #header-souterrain nav .main-logo {
+    width: 10%;
+    height: auto;
+  }
+  #header-contact nav .main-logo img, #header-mention nav .main-logo img, #header-chucky nav .main-logo img, #header-home nav .main-logo img, #header-chateau nav .main-logo img, #header-uncharted nav .main-logo img, #header-souterrain nav .main-logo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #header-contact nav #burger, #header-mention nav #burger, #header-chucky nav #burger, #header-home nav #burger, #header-chateau nav #burger, #header-uncharted nav #burger, #header-souterrain nav #burger {
+    margin-top: 2.5em;
+    width: 30px;
+    height: 2px;
+    background: #F09205;
+    display: inline-block;
+    position: relative;
+  }
+  #header-contact nav #burger::before,
+  #header-contact nav #burger::after, #header-mention nav #burger::before,
+  #header-mention nav #burger::after, #header-chucky nav #burger::before,
+  #header-chucky nav #burger::after, #header-home nav #burger::before,
+  #header-home nav #burger::after, #header-chateau nav #burger::before,
+  #header-chateau nav #burger::after, #header-uncharted nav #burger::before,
+  #header-uncharted nav #burger::after, #header-souterrain nav #burger::before,
+  #header-souterrain nav #burger::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #F09205;
+    display: inline-block;
+    position: absolute;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  #header-contact nav #burger::before, #header-mention nav #burger::before, #header-chucky nav #burger::before, #header-home nav #burger::before, #header-chateau nav #burger::before, #header-uncharted nav #burger::before, #header-souterrain nav #burger::before {
+    top: -7px;
+  }
+  #header-contact nav #burger::after, #header-mention nav #burger::after, #header-chucky nav #burger::after, #header-home nav #burger::after, #header-chateau nav #burger::after, #header-uncharted nav #burger::after, #header-souterrain nav #burger::after {
+    top: 7px;
+  }
+  #header-contact nav #burger.open, #header-mention nav #burger.open, #header-chucky nav #burger.open, #header-home nav #burger.open, #header-chateau nav #burger.open, #header-uncharted nav #burger.open, #header-souterrain nav #burger.open {
+    background: transparent;
+  }
+  #header-contact nav #burger.open::before, #header-mention nav #burger.open::before, #header-chucky nav #burger.open::before, #header-home nav #burger.open::before, #header-chateau nav #burger.open::before, #header-uncharted nav #burger.open::before, #header-souterrain nav #burger.open::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0;
+  }
+  #header-contact nav #burger.open::after, #header-mention nav #burger.open::after, #header-chucky nav #burger.open::after, #header-home nav #burger.open::after, #header-chateau nav #burger.open::after, #header-uncharted nav #burger.open::after, #header-souterrain nav #burger.open::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0;
+  }
+  #header-contact nav #deroulant, #header-mention nav #deroulant, #header-chucky nav #deroulant, #header-home nav #deroulant, #header-chateau nav #deroulant, #header-uncharted nav #deroulant, #header-souterrain nav #deroulant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    background: #000000;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 4em;
+    padding: 1.5em;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: center top;
+            transform-origin: center top;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  #header-contact nav #deroulant .sous-menu, #header-mention nav #deroulant .sous-menu, #header-chucky nav #deroulant .sous-menu, #header-home nav #deroulant .sous-menu, #header-chateau nav #deroulant .sous-menu, #header-uncharted nav #deroulant .sous-menu, #header-souterrain nav #deroulant .sous-menu {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    z-index: 10;
+  }
+  #header-contact nav #deroulant .sous-menu li, #header-mention nav #deroulant .sous-menu li, #header-chucky nav #deroulant .sous-menu li, #header-home nav #deroulant .sous-menu li, #header-chateau nav #deroulant .sous-menu li, #header-uncharted nav #deroulant .sous-menu li, #header-souterrain nav #deroulant .sous-menu li {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    margin-left: 2em;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+  }
+  #header-contact nav #deroulant .sous-menu li a, #header-mention nav #deroulant .sous-menu li a, #header-chucky nav #deroulant .sous-menu li a, #header-home nav #deroulant .sous-menu li a, #header-chateau nav #deroulant .sous-menu li a, #header-uncharted nav #deroulant .sous-menu li a, #header-souterrain nav #deroulant .sous-menu li a {
+    color: #E4E4E4;
+  }
+  #header-contact nav #deroulant .contact-banner a, #header-mention nav #deroulant .contact-banner a, #header-chucky nav #deroulant .contact-banner a, #header-home nav #deroulant .contact-banner a, #header-chateau nav #deroulant .contact-banner a, #header-uncharted nav #deroulant .contact-banner a, #header-souterrain nav #deroulant .contact-banner a {
+    background-color: inherit;
+    color: #F09205;
+    font-family: "Fjalla One";
+  }
+  #header-contact #deroulant.open, #header-mention #deroulant.open, #header-chucky #deroulant.open, #header-home #deroulant.open, #header-chateau #deroulant.open, #header-uncharted #deroulant.open, #header-souterrain #deroulant.open {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #header-contact h1, #header-mention h1, #header-chucky h1, #header-home h1, #header-chateau h1, #header-uncharted h1, #header-souterrain h1 {
+    font-size: 4rem;
+    padding-top: 6em;
+    text-shadow: 6px 1px #F09205;
+  }
+  #header-contact h1 span, #header-mention h1 span, #header-chucky h1 span, #header-home h1 span, #header-chateau h1 span, #header-uncharted h1 span, #header-souterrain h1 span {
+    font-size: 3rem;
+  }
+  #header-contact nav .main-logo, #header-mention nav .main-logo, #header-chucky nav .main-logo, #header-home nav .main-logo, #header-chateau nav .main-logo, #header-uncharted nav .main-logo, #header-souterrain nav .main-logo {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  #header-contact h1, #header-mention h1, #header-chucky h1, #header-home h1, #header-chateau h1, #header-uncharted h1, #header-souterrain h1 {
+    font-size: 3rem;
+    padding-top: 7em;
+  }
+  #header-contact h1 span, #header-mention h1 span, #header-chucky h1 span, #header-home h1 span, #header-chateau h1 span, #header-uncharted h1 span, #header-souterrain h1 span {
+    font-size: 2.5rem;
+  }
+  #header-contact nav .main-logo, #header-mention nav .main-logo, #header-chucky nav .main-logo, #header-home nav .main-logo, #header-chateau nav .main-logo, #header-uncharted nav .main-logo, #header-souterrain nav .main-logo {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #header-contact h1, #header-mention h1, #header-chucky h1, #header-home h1, #header-chateau h1, #header-uncharted h1, #header-souterrain h1 {
+    font-size: 3rem;
+    padding: 5em 2em 0;
+    margin: auto;
+  }
+  #header-contact h1 span, #header-mention h1 span, #header-chucky h1 span, #header-home h1 span, #header-chateau h1 span, #header-uncharted h1 span, #header-souterrain h1 span {
+    font-size: 2.5rem;
+  }
+  #header-contact nav .main-logo, #header-mention nav .main-logo, #header-chucky nav .main-logo, #header-home nav .main-logo, #header-chateau nav .main-logo, #header-uncharted nav .main-logo, #header-souterrain nav .main-logo {
+    width: 25%;
+  }
+}
+
+/*******Parametre généraux ******/
+footer {
+  background: url("../img/footer.png");
+  background-position: center;
+  background-size: cover;
+  background-color: #F09205;
+}
+
+footer a {
+  text-decoration: none;
+  color: #3d3d3d;
+  font-family: "Fjalla One";
+  font-size: 13px;
+}
+
+footer h3 {
+  text-transform: capitalize;
+  font-family: "Fjalla One";
+  font-size: 24px;
+}
+
+footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #000000;
+  padding: 50px;
+  z-index: -1;
+}
+
+footer .footer-container .footer-left h4 {
+  font-size: 32px;
+  font-family: "Special Elite";
+  color: #E4E4E4;
+  text-shadow: 4px 3px 0 #000000;
+}
+
+footer .footer-container .footer-left p {
+  font-family: "Fjalla One";
+  font-size: 16px;
+  color: #E4E4E4;
+  line-height: 1.8em;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 220px;
+  text-align: center;
+}
+
+footer .footer-container .footer-left .icons-container #horaire {
+  max-width: 160px;
+  margin: 1em auto;
+}
+
+footer .footer-container .footer-left .icons-container #tel {
+  max-width: 160px;
+  margin: 1em auto;
+}
+
+footer .footer-container .footer-left .icons-container ul {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-container .footer-left .icons-container ul li {
+  padding: 0.5em;
+}
+
+footer .footer-container .footer-left .icons-container ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+footer .footer-container .footer-left .icons-container ul li i {
+  color: white;
+  font-size: 2rem;
+}
+
+footer .footer-container .footer-middle {
+  max-width: 150px;
+  line-height: 2.5em;
+}
+
+footer .footer-container .footer-middle h3 {
+  text-align: center;
+}
+
+footer .footer-container .footer-middle li {
+  text-decoration: none;
+  text-align: center;
+}
+
+footer .footer-container .footer-middle li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+footer .footer-container .footer-middle li a {
+  padding: 20px auto;
+}
+
+footer .footer-container .footer-contact {
+  line-height: 2.5em;
+}
+
+footer .footer-container .footer-contact p:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+footer .footer-container .mentions-container {
+  line-height: 2.5em;
+}
+
+footer .footer-container .mentions-container h3 {
+  font-family: "Fjalla One";
+  font-size: 24px;
+  text-align: center;
+}
+
+footer .footer-container .mentions-container li {
+  line-height: 2.5em;
+  font-size: 13px;
+  text-align: center;
+}
+
+footer .footer-container .mentions-container li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+footer .corporate-container {
+  margin: auto;
+  font-family: "Roboto Mono";
+  border-top: 1px solid #E4E4E4;
+  max-width: 620px;
+  bottom: 40px;
+  color: #E4E4E4;
+}
+
+footer #corporate {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/*************** Style *********************/
+/************ Media ***********/
+@media (max-width: 800px) {
+  .footer-container {
+    font-size: 0.9rem;
+  }
+  h3 {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 710px) {
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .corporate-container {
+    border: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
